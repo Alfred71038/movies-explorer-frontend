@@ -1,0 +1,54 @@
+.header {
+    min-width: 89%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    transition-property: min-width;
+    transition-duration: 600ms;
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        min-width: 92.2%;
+    }
+}
+
+.header__logo {
+    max-width: 38px;
+    margin: 17px auto 17px 0;
+}
+
+.header__container {
+    margin-right: 70px;
+}
+
+.header__login {
+    padding-top: 28px;
+}
+
+.header__registration-button {
+    color: #FFF;
+    text-align: right;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.header__enter-button {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+    background-color: #3DDC84;
+    border-radius: 3px;
+    padding: 8px 20px;
+}
+
