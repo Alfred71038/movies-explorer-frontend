@@ -36,8 +36,6 @@ function App() {
             <></>
           )}
 
-
-
           <Routes>
             <Route path='/' element={<Main />} />
             <Route path='/movies' element={<Movies />} />
