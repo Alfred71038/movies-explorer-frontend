@@ -14,7 +14,7 @@
     margin-top: 70px;
     margin-bottom: 28px;
     transition-property: grid-template-columns, row-gap, margin-bottom;
-    transition-duration: 600m;
+    transition-duration: 600ms;
 }
 
 .movies-card-list__more {
@@ -33,7 +33,7 @@
     margin: 50px auto 80px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1226px) {
     .movies-card-list__list {
         grid-template-columns: 1fr 1fr;
         row-gap: 47px;
@@ -42,9 +42,9 @@
 
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 754px) {
     .movies-card-list {
-        min-width: 300px;
+        max-width: 100%;
     }
 
     .movies-card-list__list {

@@ -1,22 +1,22 @@
 .promo {
     background-color: #272727;
-    max-width: 1200px;
+    max-width: 93.75%;
     border-radius: 10px;
     margin: 20px auto 0;
     transition-property: margin, max-width;
     transition-duration: 600ms;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 890px) {
     .promo {
-        max-width: 728px;
+        max-width: 94.79%;
         margin: 20px auto 0;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     .promo {
-        max-width: 292px;
+        max-width: 91.25%;
         margin: 14px 14px 0;
     }
 }
@@ -38,7 +38,7 @@
     transition-duration: 600ms;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 890px) {
     .promo__title {
         padding: 350px 24px 314px;
         line-height: 52px;
@@ -47,7 +47,7 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     .promo__title {
         padding: 220px 0 212px;
         line-height: 37px;

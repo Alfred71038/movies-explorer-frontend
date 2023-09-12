@@ -6,8 +6,7 @@ import { Link } from "react-router-dom"
 function NavigationAuthorized(props) {
 
     const [windowOuterWidth, setWindowOuterWidth] = React.useState(window.innerWidth);
-    const burgerBtn = document.querySelector(".navigation-auth__burger-btn");
-    const burgerMenu = document.querySelector(".navigation-auth__menu-burger");
+
 
     useEffect(() => {
         function handleSize() {
@@ -17,18 +16,20 @@ function NavigationAuthorized(props) {
         return () => window.removeEventListener("resize", handleSize);
     })
 
-    if (windowOuterWidth < 1200) {
+    if (windowOuterWidth < 800) {
 
         function clickBurger() {
+            const burgerBtn = document.querySelector(".navigation-auth__burger-btn");
+            const burgerMenu = document.querySelector(".navigation-auth__menu-burger");
             burgerBtn.addEventListener("click", function () {
-                burgerMenu.classList.toggle("navigation-auth__menu_active");
+                burgerMenu.classList.toggle("navigation-auth__menu-active");
                 burgerBtn.classList.toggle("active");
                 burgerMenu.classList.toggle("navigation-auth__opacity-menu");
             });
         }
 
         return (
-            <section className="navigation-auth__burger">
+            <div className="navigation-auth">
                 <button
                     className="navigation-auth__burger-btn"
                     type="button"
@@ -66,13 +67,13 @@ function NavigationAuthorized(props) {
                         </ul>
                     </nav>
                 </div>
-            </section>
+            </div>
         );
     }
 
 
     return (
-        <section className="navigation-auth ">
+        <div className="navigation-auth ">
             <div className="navigation-auth__menu">
                 <nav className="navigation-auth__container">
                     <ul className="navigation-auth__list">
@@ -108,8 +109,7 @@ function NavigationAuthorized(props) {
 
                 </nav>
             </div>
-
-        </section >
+        </div >
     )
 }
 

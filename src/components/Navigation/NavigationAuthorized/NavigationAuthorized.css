@@ -1,9 +1,18 @@
-.navigation-auth__burger {
+.navigation-auth {
     height: 30px;
     display: flex;
     align-items: center;
     padding: 0;
     list-style: none;
+    width: 100%;
+    justify-content: end;
+    transition-property: width, height;
+    transition-duration: 600ms;
+
+}
+
+.navigation-auth__menu {
+    width: 100%;
 }
 
 .navigation-auth__burger-btn {
@@ -15,6 +24,8 @@
     background-image: url(../../../images/icon__COLOR_icon-main.svg);
     background-color: transparent;
     border: 0;
+    transition-property: right, top;
+    transition-duration: 600ms;
 }
 
 .navigation-auth__burger-btn.active {
@@ -23,7 +34,8 @@
     position: fixed;
     right: 22.44px;
     top: 22.44px;
-
+    transition-property: right, top;
+    transition-duration: 600ms;
 }
 
 .navigation-auth__menu-burger {
@@ -38,7 +50,7 @@
 
 }
 
-.navigation-auth__menu_active {
+.navigation-auth__menu-active {
     transform: translateX(0);
     width: 100vw;
     z-index: 1;
@@ -79,6 +91,8 @@
 
 .navigation-auth__li-burger {
     margin-bottom: 29px;
+    transition-property: margin-top;
+    transition-duration: 600ms;
 }
 
 
@@ -104,6 +118,8 @@
 .navigation-auth__ul-burger:first-child {
     padding-top: 159px;
     box-sizing: border-box;
+    transition-property: width;
+    transition-duration: 600ms;
 }
 
 
@@ -111,14 +127,19 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    max-width: 100%;
-    margin-left: 426px;
+    width: 100%;
+    justify-content: end;
+    margin-left: auto;
     padding: 0;
 }
 
 .navigation-auth__item {
     display: flex;
     align-items: center;
+}
+
+.navigation-auth__item:nth-child(3) {
+    width: 45.9%;
 }
 
 .navigation-auth__link-home {
@@ -147,10 +168,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+    text-align: start;
     text-decoration: none;
     margin: 0;
     padding: 0;
-    margin-right: 366px;
 }
 
 .navigation-auth__link-profile {
@@ -167,7 +188,7 @@
     border-radius: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .navigation-auth__li-burger:active {
         text-decoration: underline;
     }
@@ -187,6 +208,7 @@
     }
 
     .navigation-auth__ul-burger:first-child {
+        width: 320px;
         padding-top: 144px;
     }
 
@@ -208,7 +230,7 @@
     .navigation-auth__menu-burger.active {
         width: 320px;
         padding: 0;
-        
+
     }
 
     .navigation-auth__burger-btn.active {

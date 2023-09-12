@@ -3,16 +3,15 @@ import './FilterCheckbox.css'
 
 function FilterCheckbox() {
     return (
-        <section className="filter-checkbox">
+        <div className="filter-checkbox">
             <label className="filter-checkbox__label round">
-                <input className="filter-checkbox__input "type="checkbox" />
-                <div className="filter-checkbox__slider">
-                    <div className="filter-checkbox__slider_round"></div>
-                </div>
+                <input className="filter-checkbox__input " type="checkbox" placeholder="Поиск"/>
+                <span className="filter-checkbox__slider">
+                    <span className="filter-checkbox__slider-round"></span>
+                </span>
             </label>
-            <p className="filter-checkbox_text">Короткометражки</p>
-        </section>
-
+            <p className="filter-checkbox__text">Короткометражки</p>
+        </div>
     )
 }
 

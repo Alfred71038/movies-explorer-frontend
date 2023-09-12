@@ -25,6 +25,7 @@ function AuthForm(props) {
                         required
                         onChange={props.handleEmail}
                         value={props.valueEmail}
+                        placeholder="Имя"
                     />
                 </label>
                 <label className="auth__label" for="email">
@@ -39,6 +40,7 @@ function AuthForm(props) {
                         required
                         onChange={props.handleEmail}
                         value={props.valueEmail}
+                        placeholder="Email"
                     />
                 </label>
                 <label className="auth__label" for="password">
@@ -53,13 +55,14 @@ function AuthForm(props) {
                         required
                         onChange={props.handlePassword}
                         value={props.valuePassword}
+                        placeholder="Пароль"
                     />
                 </label>
 
-                <button className={props.button}>{props.buttonText}</button>
+                <button type='submit' className={props.button}>{props.buttonText}</button>
                 <p className="auth__span">{props.span}
                     <Link to={props.path} className="auth__link">
-                    &nbsp;{props.link}
+                        &nbsp;{props.link}
                     </Link>
                 </p>
             </form>

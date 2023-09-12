@@ -5,7 +5,7 @@ import './NavigationLogin.css'
 function NavigationLogin() {
 
     return (
-        <nav className='navigation__container'>
+        <nav className='navigation'>
             <div className='navigation__login'>
                 <Link to='/signup' className='navigation__registration-button'>
                     Регистрация

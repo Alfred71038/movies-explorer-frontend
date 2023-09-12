@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Profile() {
     return (
-        <section className="profile">
+        <main className="profile">
             <h1 className="profile__title">Привет, Виталий!</h1>
             <form className="profile__form">
                 <label className="profile__label" for="name">
@@ -19,10 +19,11 @@ function Profile() {
                         minLength={2}
                         maxLength={30}
                         required
+                        placeholder="Имя"
                     />
                 </label>
 
-                <label className="profile__label" for="name">
+                <label className="profile__label" for="email">
                     E-mail
                     <input
                         type="email"
@@ -32,6 +33,7 @@ function Profile() {
                         minLength={2}
                         maxLength={30}
                         required
+                        placeholder="E-mail"
                     />
                 </label>
 
@@ -39,10 +41,10 @@ function Profile() {
                     Редактировать
                 </button>
             </form>
-            <Link to="/signin" className="profile__link">
+            <Link to="/" className="profile__link">
                 Выйти из аккаунта
             </Link>
-        </section >
+        </main >
     )
 }
 

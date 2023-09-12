@@ -5,17 +5,17 @@ import AuthForm from "../AuthForm/AuthForm";
 
 function Login() {
     return (
-        <section className="login">
+        <main className="login">
             <AuthForm 
                 title="Рады видеть!"
-                label="auth__label_none"
+                label="auth__label-none"
                 buttonText="Войти"
                 span="Ещё не зарегистрированы?"
                 link="Регистрация"
                 path="/signup"
                 button="auth__button-login"
             />
-        </section>
+        </main>
     )
 }
 

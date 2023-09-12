@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     margin: 80px auto 0;
+    transition-property: width;
+    transition-duration: 600ms;
 }
 
 .seacrh-form__container {
@@ -27,6 +29,8 @@
     font-weight: 400;
     line-height: 18px;
     margin-right: 10px;
+    transition-property: width, padding;
+    transition-duration: 600ms;
 }
 
 .seacrh-form__button {
@@ -42,6 +46,14 @@
 @media screen and (max-width: 740px) {
     .seacrh-form {
         width: 97.33%;
+        
+    }
+
+    .seacrh-form__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     .seacrh-form__input {

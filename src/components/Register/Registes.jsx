@@ -5,17 +5,17 @@ import AuthForm from "../AuthForm/AuthForm";
 
 function Register() {
     return (
-        <section className="register">
-            <AuthForm 
-                title="Добро пожаловать!"
-                label="auth__label"
-                buttonText="Зарегистрироваться"
-                span="Уже зарегистрированы?"
-                link="Войти"
-                path="/signin"
-                button="auth__button"
-            />
-        </section>
+            <main className="register">
+                <AuthForm
+                    title="Добро пожаловать!"
+                    label="auth__label"
+                    buttonText="Зарегистрироваться"
+                    span="Уже зарегистрированы?"
+                    link="Войти"
+                    path="/signin"
+                    button="auth__button"
+                />
+            </main>
     )
 }
 

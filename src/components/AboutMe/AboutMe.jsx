@@ -8,7 +8,6 @@ function AboutMe() {
     return (
         <section className="about-me" id="about-me">
             <h2 className="about-me__title">Студент</h2>
-            <div className="about-me__line"></div>
             <ul className="about-me__list">
                 <li className="about-me__item">
                     <h3 className="about-me__name">Alfred71038</h3>
@@ -22,7 +21,7 @@ function AboutMe() {
                     </a>
                 </li>
                 <li className="about-me__item">
-                    <img src={I} alt="Картинка" className="about-me__image" />
+                    <img src={I} alt="Моя фотография для портфолио" className="about-me__image" />
                 </li>
             </ul>
             <Portfolio />
