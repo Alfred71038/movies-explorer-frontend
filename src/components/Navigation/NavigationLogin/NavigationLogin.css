@@ -1,0 +1,41 @@
+.navigation__registration-button {
+    color: #FFF;
+    text-align: right;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+    margin-right: 30px;
+    transition-property: font-size, margin-right;
+    transition-duration: 600ms;
+}
+
+@media screen and (max-width: 700px) {
+    .navigation__registration-button {
+        font-size: 10px;
+        margin-right: 14px;
+    }
+}
+
+.navigation__enter-button {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+    background-color: #3DDC84;
+    border-radius: 3px;
+    padding: 8px 20px;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .navigation__enter-button {
+        font-size: 10px;
+        padding: 5px 12px;
+    }
+}
