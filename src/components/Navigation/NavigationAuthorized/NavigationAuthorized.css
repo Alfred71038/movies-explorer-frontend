@@ -8,7 +8,6 @@
     justify-content: end;
     transition-property: width, height;
     transition-duration: 600ms;
-
 }
 
 .navigation-auth__menu {
