@@ -1,0 +1,298 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 396px;
+    margin: 0 auto;
+    transition-property: max-width;
+    transition-duration: 600ms;
+}
+
+@media screen and (max-width: 460px) {
+    .form {
+        max-width: 260px;
+    }
+}
+
+.form__logo {
+    margin: 70px auto 36px;
+    transition-property: margin, display;
+    transition-duration: 600ms;
+}
+
+@media screen and (max-width: 769px) {
+    .form__logo {
+        margin: 232px auto 36px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .form__logo {
+        display: flex;
+        margin: 56px auto 50px;
+    }
+}
+
+.form__title {
+    color: #FFF;
+    font-family: Inter;
+    text-align: start;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    transition-property: margin-bottom, text-align;
+    transition-duration: 600ms;
+}
+
+@media screen and (max-width: 460px) {
+    .form__title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+
+.form__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    color: #8B8B8B;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.form__label:last-of-type {
+    margin-bottom: 0;
+}
+
+.form__input {
+    border-radius: 8px;
+    background: #2F2F2F;
+    border: none;
+    min-width: 366px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-property: max-width, font-style, font-weight, line-height, min-width;
+    transition-duration: 600ms;
+}
+
+@media screen and (max-width: 460px) {
+    .form__input {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        min-width: 230px;
+    }
+}
+
+.form__button {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 3px;
+    border: none;
+    background: #4285F4;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    margin-top: 71px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 16px;
+    transition-property: max-width, font-style, font-weight, line-height, ;
+    transition-duration: 600ms;
+}
+
+.form__button-disabled {
+    color: #C2C2C2;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 3px;
+    border: none;
+    background: #F8F8F8;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    margin-top: 71px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 16px;
+    transition-property: max-width, font-style, font-weight, line-height, ;
+    transition-duration: 600ms;
+}
+
+.form__button-login {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 3px;
+    border: none;
+    background: #4285F4;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    margin-top: 159px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 16px;
+    transition-property: max-width, font-style, font-weight, line-height, ;
+    transition-duration: 600ms;
+}
+
+.form__button-login-disabled {
+    color: #C2C2C2;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 3px;
+    border: none;
+    background: #F8F8F8;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    margin-top: 159px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 16px;
+    transition-property: max-width, font-style, font-weight, line-height, ;
+    transition-duration: 600ms;
+}
+
+@media screen and (max-width: 460px) {
+    .form__button {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        min-width: 260px;
+        margin-top: 157px;
+    }
+
+    .form__button-disabled {
+        color: #C2C2C2;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        min-width: 260px;
+        margin-top: 157px;
+    }
+
+    .form__button-login {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        min-width: 260px;
+        margin-top: 247px;
+    }
+
+    .form__button-login-disabled {
+        color: #C2C2C2;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        min-width: 260px;
+        margin-top: 247px;
+    }
+
+}
+
+.form__span {
+    color: #8B8B8B;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+    transition-property: font-size;
+    transition-duration: 600ms;
+}
+
+@media screen and (max-width: 769px) {
+    .form__span {
+        margin-bottom: 232px;
+
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .form__span {
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+}
+
+.form__link {
+    color: #4285F4;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transition-property: font-size;
+    transition-duration: 600ms;
+}
+
+@media screen and (max-width: 460px) {
+    .form__link {
+        font-size: 12px;
+    }
+}
+
+.form__error {
+    color: #ee3465;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+}
