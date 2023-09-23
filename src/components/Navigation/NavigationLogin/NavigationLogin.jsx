@@ -7,10 +7,10 @@ function NavigationLogin() {
     return (
         <nav className='navigation'>
             <div className='navigation__login'>
-                <Link to='/signup' className='navigation__registration-button'>
+                <Link to='/sign-up' className='navigation__registration-button'>
                     Регистрация
                 </Link>
-                <Link to='/signin' className='navigation__enter-button'>
+                <Link to='/sign-in' className='navigation__enter-button'>
                     Войти
                 </Link>
             </div>

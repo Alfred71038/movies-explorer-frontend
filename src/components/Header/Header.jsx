@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import './Header.css';
 
@@ -9,14 +9,30 @@ import NavigationAuthorized from '../Navigation/NavigationAuthorized/NavigationA
 
 
 function Header(props) {
-    return (
 
-        <header className='header'>
-            <Link to="/">
-                <img src={logo} alt="Логотип" className="header__logo" />
-            </Link>
-            {props.loggedIn ? <NavigationAuthorized /> : <NavigationLogin/>}
-        </header>
+
+    const { pathname } = useLocation();
+
+    return (
+        pathname === '/movies' || pathname === '/saved-movies' || pathname === '/profile'
+            ?
+            <header className='header'>
+                <Link to="/">
+                    <img src={logo} alt="Логотип" className="header__logo" />
+                </Link>
+                <NavigationAuthorized />
+            </header>
+            :
+            pathname === '/'
+                ?
+                <header className='header'>
+                    <Link to="/">
+                        <img src={logo} alt="Логотип" className="header__logo" />
+                    </Link>
+                    <NavigationLogin />
+                </header>
+                :
+                <></>
     )
 }
 
